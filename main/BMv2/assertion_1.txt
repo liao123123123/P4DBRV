@@ -1,0 +1,17 @@
+
+
+//BEGIN FILTER EXP
+		if(hdr.ipv4.ttl>0){
+			assert_check_pass_1();
+		}else{
+			assert_check_fail_1();
+		}
+//END FILTER EXP
+
+//BEGIN MATCH EXP
+		if(hdr.ipv4.isValid()==(bool)1){
+			assert_check_pass_1();
+		}else{
+			assert_check_fail_1();
+		}
+//END MATCH EXP
